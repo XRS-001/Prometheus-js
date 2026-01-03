@@ -16,7 +16,7 @@ export default function MenuCards() {
       e.preventDefault();
       navigate("/retrieve");}}>
       <div>
-        <h3>Retrieve Image</h3>
+        <h3>Retrieve RAW data</h3>
       </div>
     </button>
     <button className="card" id="settings" onClick={(e) => {

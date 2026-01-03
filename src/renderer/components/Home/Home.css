@@ -8,6 +8,17 @@
   --success: #3ddc97;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
 .app {
   display: grid;
   grid-template-columns: 240px 1fr;

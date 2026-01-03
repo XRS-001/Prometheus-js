@@ -1,0 +1,45 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #23262f;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #cfa935;
+  --success: #3ddc97;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+}
+
+.main {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form {
+  background-color: var(--panel);
+  padding: 18px;
+  padding-top: 10px;
+  border-radius: 6px;
+  width: 450px;
+  font-size: 1.35rem;
+}

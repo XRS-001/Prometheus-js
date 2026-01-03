@@ -17,7 +17,7 @@ export default function Sidebar({ active }) {
         navigate("/upload");}}>Upload Image</a>
       <a className={active === "retrieve" ? "active" : ""} onClick={(e) => {
         e.preventDefault();
-        navigate("/retrieve");}}>Retrieve Image</a>
+        navigate("/retrieve");}}>Retrieve RAW data</a>
       <a className={active === "settings" ? "active" : ""} onClick={(e) => {
         e.preventDefault();
         navigate("/settings");}}>Settings</a>

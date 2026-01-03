@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
-import ETHLogo from '../assets/ETHLogo.png'
+import ETHLogo from '../../assets/ETHLogo.png'
 import CollapsibleParagraph from './CollapsibleParagraph.jsx'
 import MenuCards from './MenuCards.jsx'
 import NetworkInfo from './NetworkInfo.jsx'
-import Sidebar from './Sidebar.jsx'
+import Sidebar from '../Sidebar.jsx'
 
 export default function Home() {
   return (
