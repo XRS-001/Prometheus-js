@@ -1,0 +1,56 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #23262f;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #cfa935;
+}
+
+.networkInfo {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.networkInfo h2 {
+  font-size: 24px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.infoCard {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.infoCard:hover {
+  background: #1f2430;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.infoCard h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.infoCard p {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: auto;          /* pushes paragraph to the bottom */
+  text-align: left;          /* aligns text left */
+}

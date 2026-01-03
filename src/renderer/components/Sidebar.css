@@ -1,0 +1,39 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #23262f;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #cfa935;
+  --success: #3ddc97;
+}
+
+.sidebar {
+  background: var(--panel);
+  padding: 24px;
+  border-right: 1px solid var(--border);
+}
+.sidebarLogo {
+  position: relative;
+  top: -72px;
+  left: 130px;
+}
+.sidebar h2 {
+  margin: 0 0 24px;
+  color: var(--accent);
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #1f2430;
+  color: var(--text);
+}

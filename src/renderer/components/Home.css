@@ -1,0 +1,26 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #23262f;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #cfa935;
+  --success: #3ddc97;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+}
+
+.main {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
