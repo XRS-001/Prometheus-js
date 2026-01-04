@@ -15,14 +15,16 @@
 }
 .sidebarLogo {
   position: relative;
-  top: -72px;
+  top: -85px;
   left: 130px;
 }
 .sidebar h2 {
   margin: 0 0 24px;
   color: var(--accent);
+  border-bottom: 4px solid var(--border);
+  padding-bottom: 10px;
+  padding-left: 4px;
 }
-
 .sidebar nav a {
   display: block;
   padding: 10px 12px;

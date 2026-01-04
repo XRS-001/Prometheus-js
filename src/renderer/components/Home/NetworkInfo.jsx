@@ -7,7 +7,7 @@ export default function NetworkInfo() {
     <div className="infoGrid">
       <div className="infoCard">
         <h3>Ether In Security Deposit</h3>
-        <p>Ξ2,140</p>
+        <p>Ξ2,140.976</p>
       </div>
       <div className="infoCard">
         <h3>Images Authenticated</h3>
@@ -15,7 +15,7 @@ export default function NetworkInfo() {
       </div>
       <div className="infoCard">
         <h3>Ether Voting Activity Per Day</h3>
-        <p>Ξ58</p>
+        <p>Ξ58.564</p>
       </div>
       <div className="infoCard">
         <h3>Images Currently Being Authenticated</h3>

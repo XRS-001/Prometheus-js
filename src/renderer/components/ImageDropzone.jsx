@@ -1,28 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useContext} from "react";
 import { useDropzone } from "react-dropzone";
 import './ImageDropzone.css';
 
-export default function ImageDropzone() {
-  const [images, setImages] = useState([]);
-
+export default function ImageDropzone({ whenDropped, setImage, RAW }) {
+  const [ images, setImages ] = useState([]);
   const onDrop = (acceptedFiles) => {
-    const filesWithPreview = acceptedFiles.map((file) =>
-      Object.assign(file, {
-        preview: URL.createObjectURL(file),
-      })
-    );
-    setImages((prev) => [...prev, ...filesWithPreview]);
-  };
+    const allowedExtensions = RAW ? ["dng"] : ["png", "jpg", "jpeg"];
 
-  useEffect(() => {
-    return () => {
-      images.forEach((file) => URL.revokeObjectURL(file.preview));
-    };
-  }, [images]);
+    const validFiles = acceptedFiles.filter((file) => {
+      const ext = file.name.split(".").pop().toLowerCase();
+      return allowedExtensions.includes(ext);
+    });
+
+    if (validFiles.length === 0) {
+      alert(`Only ${allowedExtensions.reduce((prev, curr, i) => {return prev ? i < allowedExtensions.length-1 ? prev + `, ${curr}` : prev + `, and ${curr}` : curr})} file extensions are allowed!`);
+      return;
+    }
+
+    const filesWithPreview = validFiles.map((file) =>
+      Object.assign(file, { preview: URL.createObjectURL(file) })
+    );
+
+    setImages((prev) => [...prev, ...filesWithPreview]);
+    whenDropped();
+    setImage && setImage(filesWithPreview[0].preview);
+  };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { "image/*": [] },
     multiple: false,
   });
 
@@ -35,17 +40,6 @@ export default function ImageDropzone() {
         ) : (
           <p>Drag & drop an image here, or click to select a file</p>
         )}
-      </div>
-
-      <div className="preview-container">
-        {images.map((file, index) => (
-          <img
-            key={index}
-            className="preview-image"
-            src={file.preview}
-            alt={file.name}
-          />
-        ))}
       </div>
     </div>
   );

@@ -1,0 +1,75 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #23262f;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #cfa935;
+}
+.infoWrapper {
+  background-color: var(--panel);
+  padding: 18px;
+  padding-top: 10px;
+  border-radius: 6px;
+  width: 2200px;
+  font-size: 1.35rem;
+  display: flex;
+  gap: 24px;
+}
+.imageInfo {
+  flex: 1;
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.infoWrapper img {
+  width: 800px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.imageInfo h2 {
+  font-size: 24px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.infoGrid {
+  display: grid;
+  word-break: break-word;
+  grid-template-columns: repeat(auto-fit, minmax(1100px, 0.5fr));
+  gap: 16px;
+}
+.infoCard {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.infoCard:hover {
+  background: #1f2430;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.infoCard h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.infoCard p {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: auto;
+  text-align: left;
+}
