@@ -22,8 +22,8 @@ export default function ImageDropzone({ whenDropped, setImage, RAW }) {
     );
 
     setImages((prev) => [...prev, ...filesWithPreview]);
-    whenDropped();
     setImage && setImage(filesWithPreview[0].preview);
+    whenDropped();
   };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({

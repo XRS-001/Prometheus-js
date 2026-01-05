@@ -44,7 +44,7 @@ input {
   border-color: var(--panel);
   border-radius: 3px;
   border: 2px;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 1px;
   margin: 2px;
 }
