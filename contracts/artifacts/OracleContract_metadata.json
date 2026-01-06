@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_genesisFunding",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_hash",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_commitEnd",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_revealEnd",
+						"type": "uint256"
+					}
+				],
+				"name": "add_ballot",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OracleContract.sol": "OracleContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Notary.sol": {
+			"keccak256": "0x7cd016653362da3737afdd318486675e635d7e3f0c15063cd81cdf94af3da3d8",
+			"urls": [
+				"bzz-raw://d5362a16a7f309c5a57620c26d6019671723a463b00d0d4b1b9aa5a926191b66",
+				"dweb:/ipfs/QmeTZVeZhs8DozW9DAKr94WqF9Sxwpcwes4zgxTVcaiZN9"
+			]
+		},
+		"OracleContract.sol": {
+			"keccak256": "0xb9fab465717830faacef863ca5883c1c5ffeb7c6969f67d9b0d5a228b1b25b4e",
+			"urls": [
+				"bzz-raw://033662a8496865c53c5b314047ff5935f22277eeb32c474cc7a59b4c58ef4b59",
+				"dweb:/ipfs/QmQ1APHQKGbXKA5UdW7iJsRgSp5TneZszL68nYZRnhyYS2"
+			]
+		}
+	},
+	"version": 1
+}

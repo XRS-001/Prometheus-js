@@ -1,0 +1,180 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_notary",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int32",
+						"name": "x",
+						"type": "int32"
+					}
+				],
+				"name": "abs",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_genesisFunding",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "jpeg_hash",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_commitEnd",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_revealEnd",
+						"type": "uint32"
+					}
+				],
+				"name": "add_ballot",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "voteCommitment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "jpegHash",
+						"type": "uint256"
+					}
+				],
+				"name": "commit_vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "jpegHash",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCommitment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "revealRating",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "revealStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "spentReceipt",
+						"type": "uint256"
+					}
+				],
+				"name": "reveal_vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "jpegHash",
+						"type": "uint256"
+					}
+				],
+				"name": "secure_reward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "jpegHash",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Prometheus.sol": "Oracle"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Prometheus.sol": {
+			"keccak256": "0x66c8dc634cd06ccba2228944e0a06746266fbe9fde30eae7b8c770c0052b2efa",
+			"urls": [
+				"bzz-raw://d82a0169d3bef0efdbe40206e1a09b562fc2941fb044e00c28f8bdbaec893828",
+				"dweb:/ipfs/QmY6vNVDVohxEfeogZKmAu5DGasv2qr9zLkHtMWpmd4167"
+			]
+		}
+	},
+	"version": 1
+}
